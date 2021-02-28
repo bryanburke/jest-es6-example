@@ -1,0 +1,63 @@
+{
+    "appPort": 5500,
+    "extensions": [
+        "adammaras.overtype",
+        "davidanson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "eriklynd.json-tools",
+        "esbenp.prettier-vscode",
+        "mkaufman.HTMLHint",
+        "nextfaze.json-parse-stringify",
+        "redhat.vscode-yaml",
+        "ritwickdey.liveserver",
+        "stylelint.vscode-stylelint",
+        "tuxtina.json2yaml"
+    ],
+    "image": "your-node14-image-here",
+    "mounts": [
+        "source=history-${localWorkspaceFolderBasename},target=/commandhistory,type=volume"
+    ],
+    "postCreateCommand": "npm install",
+    "settings": {
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[yaml]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.tabSize": 2
+        },
+        "css.validate": false,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.rulers": [80],
+        "editor.tabSize": 4,
+        "eslint.run": "onSave",
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "git.path": "/usr/bin/git",
+        "html.validate.scripts": false,
+        "html.validate.styles": false,
+        "javascript.validate.enable": false,
+        "liveServer.settings.root": "/webapp",
+        "markdownlint.run": "onSave",
+        "terminal.explorerKind": "integrated",
+        "terminal.integrated.automationShell.linux": "/bin/sh",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.shellArgs.linux": ["--login"],
+        "typescript.validate.enable": false
+    }
+}

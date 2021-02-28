@@ -1,7 +1,10 @@
-import foo from "../modules/foo.js";
+/* eslint-disable import/no-commonjs */
+const { foo } = require("../modules/foo.js");
 
-describe("foo", () => {
-    it("reveals bar's value", () => {
-        expect(foo("baz")).toBe("bar: baz");
+describe("foo.js", () => {
+    describe("foo", () => {
+        it("constructs a string with bar", () => {
+            expect(foo("baz")).toBe("bar: baz");
+        });
     });
 });
