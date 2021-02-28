@@ -1,0 +1,57 @@
+{
+    "extends": ["airbnb-base", "plugin:promise/recommended", "prettier"],
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {}
+    },
+    "plugins": ["import", "promise"],
+    "rules": {
+        "camelcase": "error",
+        "complexity": ["error", { "max": 10 }],
+        "default-case-last": "error",
+        "default-param-last": "error",
+        "eqeqeq": "error",
+        "func-style": ["error", "declaration"],
+        "import/exports-last": "error",
+        "import/extensions": "off",
+        "import/group-exports": "error",
+        "import/no-commonjs": "off",
+        "import/no-namespace": "error",
+        "import/no-nodejs-modules": "off",
+        "import/no-unused-modules": "off",
+        "import/unambiguous": "off",
+        "init-declarations": "error",
+        "no-constructor-return": "error",
+        "no-dupe-else-if": "error",
+        "no-eq-null": "error",
+        "no-implicit-coercion": "error",
+        "no-implicit-globals": ["error", { "lexicalBindings": true }],
+        "no-import-assign": "error",
+        "no-invalid-this": "error",
+        "no-loss-of-precision": "error",
+        "no-promise-executor-return": "error",
+        "no-setter-return": "error",
+        "no-shadow": ["error", { "builtinGlobals": true }],
+        "no-undefined": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unreachable-loop": "error",
+        "no-useless-backreference": "error",
+        "no-useless-call": "error",
+        "no-warning-comments": "error",
+        "prefer-regex-literals": [
+            "error",
+            { "disallowRedundantWrapping": true }
+        ],
+        "promise/no-callback-in-promise": "off",
+        "require-atomic-updates": "error",
+        "require-unicode-regexp": "error",
+        "strict": ["error", "global"],
+        "vars-on-top": "off"
+    }
+}
